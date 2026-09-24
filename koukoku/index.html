@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>決算公告（貸借対照表） | 一般社団法人セイージー</title>
+<meta name="robots" content="index,follow">
+<style>
+  :root { --ink:#1a1a1a; --muted:#5c5c5c; --line:#cfcfcf; --bg:#ffffff; --head:#f3f3f3; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --ink:#ececec; --muted:#a8a8a8; --line:#444; --bg:#161616; --head:#222; }
+  }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP",sans-serif; line-height:1.7; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.4rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:40px 0 4px; border-bottom:2px solid var(--ink); padding-bottom:4px; }
+  .meta { color:var(--muted); font-size:.9rem; margin:0 0 24px; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:.95rem; }
+  th, td { border:1px solid var(--line); padding:6px 10px; }
+  th { background:var(--head); text-align:left; font-weight:600; }
+  td.num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  tr.total td { font-weight:700; }
+  .sec td { background:var(--head); font-weight:600; }
+  .note { color:var(--muted); font-size:.85rem; }
+  .grid { display:grid; grid-template-columns:1fr; gap:0 24px; }
+  @media (min-width:720px) { .grid { grid-template-columns:1fr 1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>決算公告</h1>
+  <p class="meta">一般社団法人セイージー<br>
+  静岡県牧之原市片浜1216番地1　代表理事 石山 和生</p>
+
+  <p>一般社団法人及び一般財団法人に関する法律第128条第3項の規定に基づき、貸借対照表の内容を開示します。</p>
+
+  <!-- 年度ごとに下へ追加する。各年度は定時社員総会終結の日後5年を経過する日まで掲載を続ける。 -->
+
+  <section id="fy2025">
+    <h2>第2期　貸借対照表（2026年6月30日現在）</h2>
+    <p class="note">事業年度：2025年7月1日から2026年6月30日まで（単位：円）／掲載期間：2031年8月15日まで</p>
+    <div class="grid">
+      <table>
+        <tr><th colspan="2">資産の部</th></tr>
+        <tr class="sec"><td colspan="2">流動資産</td></tr>
+        <tr><td>現金</td><td class="num">10,600</td></tr>
+        <tr><td>普通預金</td><td class="num">1,049,901</td></tr>
+        <tr><td>仮払地方税</td><td class="num">16,000</td></tr>
+        <tr><td>仮払金</td><td class="num">105,930</td></tr>
+        <tr class="total"><td>資産合計</td><td class="num">1,182,431</td></tr>
+      </table>
+      <table>
+        <tr><th colspan="2">負債の部</th></tr>
+        <tr class="sec"><td colspan="2">流動負債</td></tr>
+        <tr><td>短期借入金</td><td class="num">2,047,830</td></tr>
+        <tr><td>預り金</td><td class="num">4,594</td></tr>
+        <tr><td>未払法人税等</td><td class="num">29,500</td></tr>
+        <tr class="total"><td>負債合計</td><td class="num">2,081,924</td></tr>
+        <tr><th colspan="2">純資産の部</th></tr>
+        <tr><td>繰越利益剰余金</td><td class="num">△899,493</td></tr>
+        <tr class="sub"><td>（うち当期純損失）</td><td class="num">(△832,613)</td></tr>
+        <tr class="total"><td>純資産合計</td><td class="num">△899,493</td></tr>
+        <tr class="total"><td>負債・純資産合計</td><td class="num">1,182,431</td></tr>
+      </table>
+    </div>
+    <p class="note">「△」はマイナスを示します。</p>
+  </section>
+</main>
+</body>
+</html>
